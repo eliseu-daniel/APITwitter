@@ -36,7 +36,7 @@ docker compose up -d --build
 5. **Acesse o container**
 
 ```bash
-docker-compose exec app bash
+docker-compose exec laravel.test bash
 ```
 
 6. **Instale as dependências do projeto**
@@ -48,13 +48,13 @@ composer install
 7. **Gere a key do projeto Laravel**
 
 ```bash
-docker compose exec app php artisan key:generate
+docker compose exec laravel.test php artisan key:generate
 ```
 
 8. **Execute as Migrations**
 
 ```bash
-docker compose exec app php artisan migrate
+docker compose exec laravel.test php artisan migrate
 ```
 
 9. **Execute a aplicação**
