@@ -40,7 +40,7 @@ class UserController extends Controller
     public function update(StoreUpdateUserRequest $request, string $id)
     {
         $user = User::findOrFail($id);
-        $data = $request->all();
+        $data = $request->validated();
         if ($request->password)
             $data['password'] = bcrypt($request->password);
 

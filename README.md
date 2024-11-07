@@ -63,4 +63,4 @@ docker compose exec laravel.test php artisan migrate
 ./vendor/bin/sail up
 ```
 
-Após a configuração, a aplicação Laravel estará disponível em ```http://localhost:80```.
+Após a configuração, a aplicação Laravel estará disponível em ```http://localhost:80/api/```.
